@@ -16,8 +16,17 @@ class BookService {
     }
 
     // for edit book
+//    fun updateBook(id: String): Book {
+//        return bookRepository.
+//    }
+
     // for get all book
+    fun getAllBooks(): List<Book> = bookRepository.findAll()
+
     // for get book details
+    fun getBookDetail(id: String) = bookRepository.findById(id)
+
     // for delete book
+    fun deleteBook(id:String) = bookRepository.deleteById(id)
 
 }
